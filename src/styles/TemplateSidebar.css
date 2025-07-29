@@ -1,0 +1,109 @@
+.sidebar {
+  width: 280px;
+  background-color: #ffffff; /* Clean white */
+  border-right: 1px solid #e5e7eb; /* Subtle gray border */
+  padding: 2rem 1.5rem;
+  height: 100vh;
+  overflow-y: auto;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #9333ea; /* Dark gray for headers */
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.025em;
+}
+
+.sidebar .form-control {
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  background-color: #f9fafb; /* Off-white */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar .form-control:focus {
+  border-color: #2dd4bf; /* Teal accent */
+  box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.15); /* Teal focus ring */
+  outline: none;
+}
+
+.category-btn {
+  background: none;
+  border: none;
+  color: #9333ea; /* Purple accent */
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-btn:hover {
+  color: #7e22ce; /* Darker purple */
+  transform: translateX(4px);
+}
+
+.category-btn::after {
+  content: '\25BC'; /* Down arrow */
+  font-size: 0.8rem;
+  color: #9333ea; /* Purple */
+  transition: transform 0.8s cubic-bezier(0.58, -0.35, 0.17, 1.25), color 0.2s ease;
+}
+
+.category-btn.expanded::after {
+  transform: rotate(180deg);
+  color: #7e22ce; /* Darker purple */
+}
+
+.template-list {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.template-item {
+  color: #6b7280; /* Medium gray */
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.template-item:hover {
+  background-color: #f3e8ff; /* Light purple */
+  color: #7e22ce; /* Darker purple */
+  transform: translateX(4px);
+  font-weight: 500;
+}
+
+/* Scrollbar styling */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}

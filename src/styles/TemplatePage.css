@@ -1,0 +1,11 @@
+.template-page {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent outer scrollbars */
+}
+
+.editor-container {
+  flex: 1; /* Take up remaining space after sidebar */
+  overflow-y: auto; /* Allow scrolling within editor if needed */
+  background-color: #f3f4f6; /* Neutral light gray background */
+}

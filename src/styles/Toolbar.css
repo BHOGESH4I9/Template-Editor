@@ -1,0 +1,172 @@
+.toolbar {
+  background-color: #ffffff; /* Clean white */
+  border-bottom: 1px solid #e5e7eb; /* Subtle gray border */
+  padding: 0.75rem 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /* Modern font stack */
+}
+
+.toolbar button {
+  border-radius: 15px;
+  border: 1px solid #d1d5db; /* Light gray */
+  background-color: #f9fafb; /* Off-white */
+  color: #7e22ce; /* Teal */
+  padding: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.toolbar button:hover {
+  background-color: #e0f2fe; /* Light teal */
+  color: #7e22ce; /* Darker teal */
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar button.btn-primary {
+  background-color: #9333ea; /* Purple */
+  color: #ffffff; /* White */
+  border-color: #9333ea;
+}
+
+.toolbar button.btn-primary:hover {
+  background-color: #7e22ce; /* Darker purple */
+  color: #ffffff;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Download button specific styling */
+.toolbar button.download-btn {
+  border-color: #f472b6; /* Coral */
+  background-color: #fce7f3; /* Light coral */
+  color: #f472b6; /* Coral */
+  position: relative;
+  overflow: hidden;
+}
+
+.toolbar button.download-btn:hover {
+  background-color: #fbcfe8; /* Lighter coral */
+  color: #ec4899; /* Darker coral */
+  transform: translateY(-2px) scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Pulse animation for download button */
+.toolbar button.download-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(244, 114, 182, 0.3) 0%, transparent 70%);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+}
+
+.toolbar button.download-btn:hover::after {
+  transform: translate(-50%, -50%) scale(1); /* Pulse effect */
+}
+
+.toolbar .dropdown-toggle {
+  border-radius: 50px;
+  border: 1px solid #d1d5db;
+  background-color: #f9fafb;
+  color: #7e22ce; /* Teal */
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.toolbar .dropdown-toggle:hover {
+  background-color: #e0f2fe; /* Light teal */
+  color: #795596; /* Darker teal */
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar .dropdown-menu {
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 10rem;
+}
+
+.toolbar .dropdown-item {
+  color: #4b5563; /* Dark gray */
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.toolbar .dropdown-item:hover {
+  background-color: #fce7f3; /* Light coral */
+  color: #ec4899; /* Darker coral */
+}
+
+.toolbar .dropdown-item.active {
+  background-color: #9333ea; /* Purple */
+  color: #ffffff;
+}
+
+.toolbar .icon {
+  font-size: 1.1rem;
+  color: #9333ea; /* Purple for icons */
+  transition: color 0.2s ease;
+}
+
+.toolbar .download-icon {
+  font-size: 1.2rem;
+  color: #9333ea; /* Purple for download icon */
+}
+
+.pdf-clean {
+  background-color: #ffffff !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #000 !important;
+}
+
+/* Tooltip styling */
+.toolbar .tooltip-inner {
+  background-color: #4b5563; /* Dark gray */
+  color: #ffffff;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+}
+
+.toolbar .tooltip-arrow::before {
+  border-top-color: #4b5563;
+}
+
+/* Margin padding classes */
+.padding-normal {
+  padding: 1rem;
+}
+
+.padding-wide {
+  padding: 2rem;
+}
+
+.padding-extra-wide {
+  padding: 4rem;
+}

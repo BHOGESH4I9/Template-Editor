@@ -1,0 +1,120 @@
+.editor-wrapper {
+  background-color: #ffffff; /* White */
+  border: 1px solid #e5e7eb; /* Subtle gray */
+  border-radius: 8px;
+  padding: 1rem;
+  height: calc(100vh - 4rem);
+  display: flex;
+  flex-direction: column;
+  margin: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.editor-wrapper:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #b765ff; /* Teal on hover */
+}
+
+.template-form {
+  background-color: #f9fafb; /* Off-white */
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 1rem;
+  max-height: 250px;
+  overflow-y: auto;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.template-form:hover {
+  background-color: #ecfdf5; /* Light teal */
+}
+
+.template-form h5 {
+  color: #4b5563; /* Dark gray */
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.template-form .form-control {
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+  padding: 0.5rem 0.75rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.template-form .form-control:focus {
+  border-color: #9333ea; /* Purple accent */
+  box-shadow: 0 0 0 3px rgba(147, 51, 234, 0.15); /* Purple focus ring */
+}
+
+.editor-area {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #374151; /* Darker gray text */
+  background-color: #f9fafb; /* Off-white */
+  border: 1px solid #e5e7eb; /* Subtle gray */
+  border-radius: 6px;
+  margin: 10px;
+  min-height: 200px;
+  transition: background-color 0.2s ease;
+}
+
+.ProseMirror {
+  padding: 2rem 3rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  outline: none;
+  box-sizing: border-box;
+  min-height: 200px;
+}
+
+.ProseMirror img {
+  max-width: 100%;
+  resize: both;
+  overflow: auto;
+  display: block;
+  margin: 1rem 0;
+}
+
+.ProseMirror [style*="font-size"] {
+  font-size: inherit !important;
+}
+
+img[contenteditable='false'] {
+  resize: both;
+  overflow: auto;
+  display: block;
+  max-width: 100%;
+  border: 1px dashed #aaa;
+  padding: 4px;
+}
+
+/* Scrollbar styling */
+.editor-area::-webkit-scrollbar,
+.template-form::-webkit-scrollbar {
+  width: 8px;
+}
+
+.editor-area::-webkit-scrollbar-track,
+.template-form::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.editor-area::-webkit-scrollbar-thumb,
+.template-form::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 4px;
+}
+
+.editor-area::-webkit-scrollbar-thumb:hover,
+.template-form::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
