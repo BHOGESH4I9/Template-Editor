@@ -18,10 +18,11 @@ import TaskItem from '@tiptap/extension-task-item';
 import TextAlign from '@tiptap/extension-text-align';
 import Heading from '@tiptap/extension-heading';
 import Toolbar from './Toolbar';
-import '../styles/Editor.css';
 import { Color } from '@tiptap/extension-color';
 import FontSize from '@tiptap/extension-font-size';
 import { TextStyle } from '@tiptap/extension-text-style';
+
+import '../styles/editor.css';
 
 const EditorApp = ({ selectedTemplate }) => {
   const [inputValues, setInputValues] = useState({});
