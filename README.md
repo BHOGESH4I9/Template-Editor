@@ -37,29 +37,29 @@ Template-Editor/
 ├── package.json
 └── README.md
 
-### Getting Started
+## Getting Started
 
-### Prerequisites
+## Prerequisites
 
 - Node.js (v16+)
 - npm or yarn
 
-### Installation
+## Installation
 
-```bash
+bash
 git clone https://github.com/BHOGESH4I9/Template-Editor.git
 cd Template-Editor
 npm install
 npm run dev
 
 
-### How It Works
+## How It Works
 Type your template code using supported syntax (Handlebars or Liquid).
 A sample data context is injected automatically.
 The app compiles your code and updates the output in real-time.
 You can export or copy the result when you're done.
 
-### Tech Stack
+## Tech Stack
 
 JavaScript (Vite-based frontend)
 Handlebars.js / LiquidJS
